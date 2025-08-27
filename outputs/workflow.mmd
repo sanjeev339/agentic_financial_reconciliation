@@ -1,0 +1,7 @@
+flowchart TD
+  U[User Uploads ERP (Excel) & Bank (PDF)] --> E(ExtractorAgent)
+  E --> N(NormalizerAgent)
+  N --> M(MatcherAgent)
+  M --> A(AuditorAgent)
+  A --> R(ReporterAgent)
+  R --> O[Outputs: CSV/Excel, PDF, Logs, Diagram]
